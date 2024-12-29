@@ -7,7 +7,7 @@ module.exports = {
         sans: ["Public Sans", "sans-serif"],
       },
       colors: {
-        custom: {
+        primary: {
           beige: {
             500: "#989088",
             100: "#F8F4F0",
@@ -26,7 +26,7 @@ module.exports = {
           red: "#C94736",
           purple: "#826C8D",
         },
-        other: {
+        tertiary: {
           purple: "#AF81BA",
           turquoise: "#597C7C",
           brown: "#93674F",

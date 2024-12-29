@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { provideHttpClient } from '@angular/common/http';
+import { SideBarComponent } from './side-bar/side-bar.component';
 @NgModule({
   declarations: [
     CardBudgetsComponent,
@@ -15,6 +16,7 @@ import { provideHttpClient } from '@angular/common/http';
     CardTransactionsComponent,
     CardRecurringComponent,
     HeaderComponent,
+    SideBarComponent,
   ],
   imports: [
     CommonModule,
@@ -29,6 +31,7 @@ import { provideHttpClient } from '@angular/common/http';
     CardTransactionsComponent,
     CardRecurringComponent,
     HeaderComponent,
+    SideBarComponent,
   ],
 })
 export class ComponentsModule {}

@@ -7,16 +7,15 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
-import { PagesModule } from './shared/pages/pages.module';
+import { DashboardsModule } from './shared/dashboards/dashboards.module';
 import { ComponentsModule } from './shared/components/components.module';
-import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PagesModule,
+    DashboardsModule,
     ComponentsModule,
     AngularSvgIconModule.forRoot(),
   ],

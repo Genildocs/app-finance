@@ -3,9 +3,21 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'auth',
     loadChildren: () =>
-      import('./shared/pages/pages.module').then((m) => m.PagesModule),
+      import('./shared/auth/auth.module').then((m) => m.AuthModule),
+  },
+  {
+    path: 'finance',
+    loadChildren: () =>
+      import('./shared/dashboards/dashboards.module').then(
+        (m) => m.DashboardsModule
+      ),
+  },
+  {
+    path: '',
+    redirectTo: 'auth/login',
+    pathMatch: 'full',
   },
 ];
 
